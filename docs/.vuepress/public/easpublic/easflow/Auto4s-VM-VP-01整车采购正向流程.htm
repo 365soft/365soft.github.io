@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<!-- saved from url=(0016)http://localhost -->
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <title>整车采购正向流程</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        #content-info{
+            width: auto;
+            margin: 0 auto;
+            text-align: center;
+        }
+        #author-info{
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        #title{
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            padding-top: 10px;
+            margin-bottom: 2px;
+            font-size: 34px;
+            color: #505050;
+        }
+        .text{
+            white-space:nowrap;
+            text-overflow: ellipsis;
+            display: inline-block;
+            margin-right: 20px;
+            margin-bottom: 2px;
+            font-size: 20px;
+            color: #8c8c8c;
+        }
+        #navBar{
+            position: fixed;
+            right:0;
+            bottom: 0;
+            background-color: #f0f3f4;
+            overflow-y: auto;
+            text-align: center;
+        }
+        #svg-container{
+            width: 100%;
+            min-width: 0;
+            margin: 0 10px;
+        }
+        #nav-thumbs{
+            padding: 0 5px;
+        }
+        .nav-thumb{
+            position: relative;
+            margin: 10px auto;
+        }
+        .nav-thumb >p{
+            text-align: center;
+            font-size: 12px;
+            margin: 4px 0 0 0;
+        }
+        .nav-thumb >div{
+            position: relative;
+            display: inline-block;
+            border: 1px solid #c6cfd5;
+        }
+        .nav-thumb img{
+            display: block;
+        }
+        .nav-thumb span{
+            pointer-events: none;
+        }
+        #main-content{
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #d0cfd8;
+            display: flex;
+            height: auto;
+            flex-flow: row wrap;
+            text-align:center;
+        }
+        #svg-container >svg{
+            display: block;
+            margin:10px auto;
+            margin-bottom: 0;
+        }
+        #copyright{
+            bottom: 0;
+            left: 50%;
+            margin: 5px auto;
+            font-size: 16px;
+            color: #515151;
+        }
+        #copyright >a{
+            text-decoration: none;
+            color: #77C;
+        }
+        .number{
+            position: absolute;
+            top:0;
+            left:0;
+            border-top:22px solid #76838f;
+            border-right: 22px solid transparent;
+        }
+        .pagenum{
+            font-size: 12px;
+            color: #fff;
+            position: absolute;
+            top: -23px;
+            left: 2px;
+        }
+        #navBar::-webkit-scrollbar{
+            width: 8px;
+            background-color: #f5f5f5;
+        }
+        #navBar::-webkit-scrollbar-track{
+            -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,.3);
+            border-radius: 8px;
+            background-color: #fff;
+        }
+        #navBar::-webkit-scrollbar-thumb{
+            border-radius: 8px;
+            -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,.3);
+            background-color: #6b6b70;
+        }
+        #navBar::-webkit-scrollbar-thumb:hover{
+            background-color: #4a4a4f;
+        }
+        .nav-thumb >div:hover{
+            box-shadow:1px 1px 4px rgba(0,0,0,.4);
+        }
+        .selected .number{
+            border-color: #08a1ef transparent;
+        }
+</style>
+  </head>
+  <body>
+    <div id="main-area">
+      <div id="content-info"></div>
+      <div id="main-content">
+        <div id="svg-container"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1496 970" preserveAspectRadio="xMinYMin meet" width="1496" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events" id="page1" height="970"><defs/><rect width="1496" stroke="#808080" x="0" y="0" height="970" fill="#ffffff"/><g transform="translate(39.00,77.00)" id="group1"><g id="group2"><path stroke="#ebebeb" stroke-width="2" d="M.0,.0L1418.0,.0L1418.0,205.3L.0,205.3L.0,.0z" id="shape3" fill="none"/><g transform="matrix(0.00,-1.00,1.00,0.00,-0.0,205.3)" id="shape4"><path fill-rule="nonzero" stroke="#ebebeb" stroke-width="2" d="M.0,.0L205.3,.0L205.3,56.7L.0,56.7L.0,.0z" fill="#eff4f8"/><text xml:space="preserve" style="fill:#454545;font-family:Microsoft YaHei;font-size:12.00pt"><tspan x="62.7" y="35.0">预付款环节</tspan></text></g></g><g transform="translate(0.00,205.33)" id="group5"><path stroke="#ebebeb" stroke-width="2" d="M.0,.0L1418.0,.0L1418.0,205.3L.0,205.3L.0,.0z" id="shape6" fill="none"/><g transform="matrix(0.00,-1.00,1.00,0.00,-0.0,205.3)" id="shape7"><path fill-rule="nonzero" stroke="#ebebeb" stroke-width="2" d="M.0,.0L205.3,.0L205.3,56.7L.0,56.7L.0,.0z" fill="#eff4f8"/><text xml:space="preserve" style="fill:#454545;font-family:Microsoft YaHei;font-size:12.00pt"><tspan x="70.7" y="35.0">采购环节</tspan></text></g></g><g transform="translate(0.00,410.67)" id="group8"><path stroke="#ebebeb" stroke-width="2" d="M.0,.0L1418.0,.0L1418.0,257.3L.0,257.3L.0,.0z" id="shape9" fill="none"/><g transform="matrix(0.00,-1.00,1.00,0.00,-0.0,257.3)" id="shape10"><path fill-rule="nonzero" stroke="#ebebeb" stroke-width="2" d="M.0,.0L257.3,.0L257.3,56.7L.0,56.7L.0,.0z" fill="#eff4f8"/><text xml:space="preserve" style="fill:#454545;font-family:Microsoft YaHei;font-size:12.00pt"><tspan x="96.7" y="35.0">采购收货</tspan></text></g></g><g transform="translate(0.00,668.00)" id="group11"><path stroke="#ebebeb" stroke-width="2" d="M.0,.0L1418.0,.0L1418.0,205.3L.0,205.3L.0,.0z" id="shape12" fill="none"/><g transform="matrix(0.00,-1.00,1.00,0.00,-0.0,205.3)" id="shape13"><path fill-rule="nonzero" stroke="#ebebeb" stroke-width="2" d="M.0,.0L205.3,.0L205.3,56.7L.0,56.7L.0,.0z" fill="#eff4f8"/><text xml:space="preserve" style="fill:#454545;font-family:Microsoft YaHei;font-size:12.00pt"><tspan x="70.7" y="35.0">采购发票</tspan></text></g></g></g><g transform="translate(120.00,303.00)" id="shape14"><path fill-rule="nonzero" stroke="#305c74" stroke-width="2" d="M22.0,44.0L78.0,44.0L78.0,44.0C90.2,44.0,100.0,34.2,100.0,22.0C100.0,9.8,90.2,.0,78.0,.0L22.0,.0L22.0,.0C9.8,.0,.0,9.8,.0,22.0C.0,34.2,9.8,44.0,22.0,44.0z" fill="#eff4f8"/><text xml:space="preserve" style="fill:#454545;font-family:Microsoft YaHei;font-size:12.00pt"><tspan x="34.0" y="28.5">开始</tspan></text></g><g transform="translate(214.50,359.00)" id="shape15"><path fill-rule="nonzero" stroke="#854e27" stroke-width="2" d="M136.0,60.0L136.0,.0L.0,.0L.0,60.0L136.0,60.0z" fill="#d2e7f9"/><text xml:space="preserve" style="fill:#454545;font-family:Microsoft YaHei;font-size:12.00pt"><tspan x="28.0" y="26.0">新增及维护</tspan><tspan x="20.0" y="47.0">整车采购订单</tspan></text></g><g transform="translate(39.00,24.00)" id="shape16"><path fill-rule="nonzero" stroke="#ebebeb" stroke-width="2" d="M.0,.0L1418.0,.0L1418.0,52.0L.0,52.0L.0,.0z" fill="#eff4f8"/><text xml:space="preserve" style="fill:#454545;font-family:Microsoft YaHei;font-size:12.00pt;font-weight:bold"><tspan x="4.0" y="32.0">EAS系统整车采购正向流程（Auto4S-VM-VP-01）</tspan></text></g><g transform="translate(607.00,512.00)" id="shape17"><path fill-rule="nonzero" stroke="#854e27" stroke-width="2" d="M136.0,60.0L136.0,.0L.0,.0L.0,60.0L136.0,60.0z" fill="#d2e7f9"/><text xml:space="preserve" style="fill:#454545;font-family:Microsoft YaHei;font-size:12.00pt"><tspan x="12.0" y="26.0">关联生成及维护</tspan><tspan x="12.0" y="47.0">整车采购入库单</tspan></text></g><g transform="translate(607.00,144.00)" id="shape18"><path fill-rule="nonzero" stroke="#854e27" stroke-width="2" d="M136.0,60.0L136.0,.0L.0,.0L.0,60.0L136.0,60.0z" fill="#d2e7f9"/><text xml:space="preserve" style="fill:#454545;font-family:Microsoft YaHei;font-size:12.00pt"><tspan x="52.0" y="26.0">审核</tspan><tspan x="28.0" y="47.0">付款申请单</tspan></text></g><g transform="translate(410.50,359.00)" id="shape19"><path fill-rule="nonzero" stroke="#854e27" stroke-width="2" d="M136.0,60.0L136.0,.0L.0,.0L.0,60.0L136.0,60.0z" fill="#d2e7f9"/><text xml:space="preserve" style="fill:#454545;font-family:Microsoft YaHei;font-size:12.00pt"><tspan x="52.0" y="26.0">审核</tspan><tspan x="20.0" y="47.0">整车采购订单</tspan></text></g><g transform="translate(410.00,144.00)" id="shape20"><path fill-rule="nonzero" stroke="#854e27" stroke-width="2" d="M136.0,60.0L136.0,.0L.0,.0L.0,60.0L136.0,60.0z" fill="#d2e7f9"/><text xml:space="preserve" style="fill:#454545;font-family:Microsoft YaHei;font-size:12.00pt"><tspan x="12.0" y="26.0">关联生成及维护</tspan><tspan x="28.0" y="47.0">付款申请单</tspan></text></g><g transform="translate(350.50,389.00)" id="shape21"><path stroke="#226e6d" stroke-width="2" d="M.0,.0L53.8,.0" fill="none"/><path stroke-linecap="round" stroke="#226e6d" stroke-width="1" d="M60.0,.0L52.7,-4.2C53.4,-3.0,53.8,-1.5,53.8,.0C53.8,1.5,53.4,3.0,52.7,4.2L60.0,.0" fill="#226e6d"/></g><g transform="translate(478.50,359.00)" id="shape22"><path stroke="#226e6d" stroke-width="2" d="M.0,.0L.0,-95.3" fill="none"/><path stroke-linecap="round" stroke="#226e6d" stroke-width="1" d="M.0,-101.5L-4.2,-94.2C-3.0,-94.9,-1.5,-95.3,.0,-95.3C1.5,-95.3,3.0,-94.9,4.2,-94.2L.0,-101.5" fill="#226e6d"/><rect width="64.0" x="-31.0" y="-66.2" height="21.0" fill="#ffffff"/><text xml:space="preserve" style="fill:#39a8a6;font-family:Microsoft YaHei;font-size:12.00pt"><tspan x="-31.0" y="-49.2" style="fill:#454545">关联生成</tspan></text></g><g transform="translate(830.00,144.00)" id="shape23"><path fill-rule="nonzero" stroke="#854e27" stroke-width="2" d="M136.0,60.0L136.0,.0L.0,.0L.0,60.0L136.0,60.0z" fill="#d2e7f9"/><text xml:space="preserve" style="fill:#454545;font-family:Microsoft YaHei;font-size:12.00pt"><tspan x="12.0" y="26.0">关联生成及维护</tspan><tspan x="44.0" y="47.0">付款单</tspan></text></g><g transform="translate(1076.00,144.00)" id="shape24"><path fill-rule="nonzero" stroke="#854e27" stroke-width="2" d="M136.0,60.0L136.0,.0L.0,.0L.0,60.0L136.0,60.0z" fill="#fbf2ef"/><text xml:space="preserve" style="fill:#454545;font-family:Microsoft YaHei;font-size:12.00pt"><tspan x="16.5" y="26.0">审核/确认付款</tspan><tspan x="44.0" y="47.0">付款单</tspan></text></g><g transform="translate(546.00,174.00)" id="shape25"><path stroke="#226e6d" stroke-width="2" d="M.0,.0L54.8,.0" fill="none"/><path stroke-linecap="round" stroke="#226e6d" stroke-width="1" d="M61.0,.0L53.7,-4.2C54.4,-3.0,54.8,-1.5,54.8,.0C54.8,1.5,54.4,3.0,53.7,4.2L61.0,.0" fill="#226e6d"/></g><g transform="translate(743.00,174.00)" id="shape26"><path stroke="#226e6d" stroke-width="2" d="M.0,.0L80.8,.0" fill="none"/><path stroke-linecap="round" stroke="#226e6d" stroke-width="1" d="M87.0,.0L79.7,-4.2C80.4,-3.0,80.8,-1.5,80.8,.0C80.8,1.5,80.4,3.0,79.7,4.2L87.0,.0" fill="#226e6d"/><rect width="64.0" x="11.1" y="-10.5" height="21.0" fill="#ffffff"/><text xml:space="preserve" style="fill:#454545;font-family:Microsoft YaHei;font-size:12.00pt"><tspan x="11.1" y="6.5">关联生成</tspan></text></g><g transform="translate(966.00,174.00)" id="shape27"><path stroke="#226e6d" stroke-width="2" d="M.0,.0L103.8,.0" fill="none"/><path stroke-linecap="round" stroke="#226e6d" stroke-width="1" d="M110.0,.0L102.7,-4.2C103.4,-3.0,103.8,-1.5,103.8,.0C103.8,1.5,103.4,3.0,102.7,4.2L110.0,.0" fill="#226e6d"/><rect width="64.0" x="14.8" y="-10.5" height="21.0" fill="#ffffff"/><text xml:space="preserve" style="fill:#454545;font-family:Microsoft YaHei;font-size:12.00pt"><tspan x="14.8" y="6.5">关联生成</tspan></text></g><g transform="translate(214.50,420.00)" id="shape28"><path fill-rule="nonzero" stroke="#226e6d" stroke-width="2" d="M.0,52.5L.0,.0L136.0,.0L136.0,52.5L136.0,52.5C125.7,47.7,114.2,45.0,102.0,45.0C89.8,45.0,78.3,47.7,68.0,52.5L68.0,52.5C57.7,57.3,46.2,60.0,34.0,60.0C21.8,60.0,10.3,57.3,.0,52.5z" fill="#eef7f7"/><text xml:space="preserve" style="fill:#454545;font-family:Microsoft YaHei;font-size:12.00pt"><tspan x="20.0" y="29.0">整车采购订单</tspan></text></g><g transform="translate(546.50,389.00)" id="shape29"><path stroke="#226e6d" stroke-width="2" d="M.0,.0L128.5,.0L128.5,116.8" fill="none"/><path stroke-linecap="round" stroke="#226e6d" stroke-width="1" d="M128.5,123.0L132.7,115.7C131.5,116.4,130.0,116.8,128.5,116.8C127.0,116.8,125.5,116.4,124.3,115.7L128.5,123.0" fill="#226e6d"/><rect width="64.0" x="97.5" y="6.5" height="21.0" fill="#ffffff"/><text xml:space="preserve" style="fill:#454545;font-family:Microsoft YaHei;font-size:12.00pt"><tspan x="97.5" y="23.5">关联生成</tspan></text></g><g transform="translate(830.00,512.00)" id="shape30"><path fill-rule="nonzero" stroke="#854e27" stroke-width="2" d="M136.0,60.0L136.0,.0L.0,.0L.0,60.0L136.0,60.0z" fill="#d2e7f9"/><text xml:space="preserve" style="fill:#454545;font-family:Microsoft YaHei;font-size:12.00pt"><tspan x="52.0" y="26.0">审核</tspan><tspan x="12.0" y="47.0">整车采购入库单</tspan></text></g><g transform="translate(607.00,826.25)" id="shape31"><path fill-rule="nonzero" stroke="#854e27" stroke-width="2" d="M136.0,60.0L136.0,.0L.0,.0L.0,60.0L136.0,60.0z" fill="#d2e7f9"/><text xml:space="preserve" style="fill:#454545;font-family:Microsoft YaHei;font-size:12.00pt"><tspan x="12.0" y="26.0">关联生成及维护</tspan><tspan x="44.0" y="47.0">应付单</tspan></text></g><g transform="translate(830.00,826.25)" id="shape32"><path fill-rule="nonzero" stroke="#854e27" stroke-width="2" d="M136.0,60.0L136.0,.0L.0,.0L.0,60.0L136.0,60.0z" fill="#fbf2ef"/><text xml:space="preserve" style="fill:#454545;font-family:Microsoft YaHei;font-size:12.00pt"><tspan x="52.0" y="26.0">审核</tspan><tspan x="44.0" y="47.0">应付单</tspan></text></g><g transform="translate(478.50,419.00)" id="shape33"><path stroke="#226e6d" stroke-width="2" d="M.0,.0L.0,437.3L122.3,437.3" fill="none"/><path stroke-linecap="round" stroke="#226e6d" stroke-width="1" d="M128.5,437.3L121.2,433.0C121.9,434.3,122.3,435.7,122.3,437.3C122.3,438.8,121.9,440.2,121.2,441.5L128.5,437.3" fill="#226e6d"/><rect width="64.0" x="-31.0" y="159.9" height="21.0" fill="#ffffff"/><text xml:space="preserve" style="fill:#454545;font-family:Microsoft YaHei;font-size:12.00pt"><tspan x="-31.0" y="176.9">关联生成</tspan></text></g><g transform="translate(743.00,542.00)" id="shape34"><path stroke="#226e6d" stroke-width="2" d="M.0,.0L80.8,.0" fill="none"/><path stroke-linecap="round" stroke="#226e6d" stroke-width="1" d="M87.0,.0L79.7,-4.2C80.4,-3.0,80.8,-1.5,80.8,.0C80.8,1.5,80.4,3.0,79.7,4.2L87.0,.0" fill="#226e6d"/></g><g transform="translate(743.00,856.25)" id="shape35"><path stroke="#226e6d" stroke-width="2" d="M.0,.0L80.8,.0" fill="none"/><path stroke-linecap="round" stroke="#226e6d" stroke-width="1" d="M87.0,.0L79.7,-4.2C80.4,-3.0,80.8,-1.5,80.8,.0C80.8,1.5,80.4,3.0,79.7,4.2L87.0,.0" fill="#226e6d"/></g><g transform="translate(1032.00,665.00)" id="shape36"><path fill-rule="nonzero" d="M7.5,.0L92.5,.0L92.5,.0C96.6,.0,100.0,13.4,100.0,30.0C100.0,46.6,96.6,60.0,92.5,60.0L7.5,60.0L7.5,60.0C3.4,60.0,.0,46.6,.0,30.0C.0,13.4,3.4,.0,7.5,.0z" fill="#eef7f7"/><path stroke="#226e6d" stroke-width="2" d="M7.5,.0L92.5,.0L92.5,.0C96.6,.0,100.0,13.4,100.0,30.0C100.0,46.6,96.6,60.0,92.5,60.0L7.5,60.0L7.5,60.0C3.4,60.0,.0,46.6,.0,30.0C.0,13.4,3.4,.0,7.5,.0zM92.5,.0C88.4,.0,85.0,13.4,85.0,30.0C85.0,46.6,88.4,60.0,92.5,60.0" fill="none"/><text xml:space="preserve" style="fill:#454545;font-family:Microsoft YaHei;font-size:12.00pt"><tspan x="14.3" y="26.0">整车采购</tspan><tspan x="14.3" y="47.0">核销记录</tspan></text></g><g transform="translate(806.00,665.00)" id="shape37"><path fill-rule="nonzero" stroke="#226e6d" stroke-width="2" d="M184.0,53.0L184.0,7.0C184.0,3.1,180.9,.0,177.0,.0L7.0,.0C3.1,.0,.0,3.1,.0,7.0L.0,53.0C.0,56.9,3.1,60.0,7.0,60.0L177.0,60.0C180.9,60.0,184.0,56.9,184.0,53.0z" fill="#eef7f7"/><text xml:space="preserve" style="fill:#454545;font-family:Microsoft YaHei;font-size:12.00pt"><tspan x="20.0" y="26.0">系统自动或人工手动</tspan><tspan x="60.0" y="47.0">采购核销</tspan></text></g><g transform="translate(120.00,168.00)" id="shape38"><path fill-rule="nonzero" stroke="#226e6d" stroke-width="2" d="M184.0,53.0L184.0,7.0C184.0,3.1,180.9,.0,177.0,.0L7.0,.0C3.1,.0,.0,3.1,.0,7.0L.0,53.0C.0,56.9,3.1,60.0,7.0,60.0L177.0,60.0C180.9,60.0,184.0,56.9,184.0,53.0z" fill="#eef7f7"/><text xml:space="preserve" style="fill:#454545;font-family:Microsoft YaHei;font-size:12.00pt"><tspan x="52.0" y="26.0">品牌、门店</tspan><tspan x="44.0" y="47.0">实际业务需求</tspan></text></g><g transform="translate(212.00,228.00)" id="shape39"><path stroke="#226e6d" stroke-dasharray="2.5,2.5" stroke-width="2" d="M.0,.0L.0,43.0L70.5,43.0L70.5,124.8" fill="none"/><path stroke-linecap="round" stroke="#226e6d" stroke-width="1" d="M70.5,131.0L74.7,123.7C73.5,124.4,72.0,124.8,70.5,124.8C69.0,124.8,67.5,124.4,66.3,123.7L70.5,131.0" fill="#226e6d"/></g><g transform="translate(162.00,92.00)" id="shape40"><path fill-rule="nonzero" stroke="#226e6d" stroke-width="2" d="M100.0,53.0L100.0,7.0C100.0,3.1,96.9,.0,93.0,.0L7.0,.0C3.1,.0,.0,3.1,.0,7.0L.0,53.0C.0,56.9,3.1,60.0,7.0,60.0L93.0,60.0C96.9,60.0,100.0,56.9,100.0,53.0z" fill="#eef7f7"/><text xml:space="preserve" style="fill:#454545;font-family:Microsoft YaHei;font-size:12.00pt"><tspan x="18.0" y="36.5">厂家政策</tspan></text></g><g transform="translate(898.00,572.00)" id="shape41"><path stroke="#ff0000" stroke-width="2" d="M.0,.0L.0,86.8" fill="none"/><path stroke-linecap="round" stroke="#ff0000" stroke-width="1" d="M.0,93.0L4.2,85.7C3.0,86.4,1.5,86.8,.0,86.8C-1.5,86.8,-3.0,86.4,-4.2,85.7L.0,93.0" fill="#ff0000"/></g><g transform="translate(898.00,826.25)" id="shape42"><path stroke="#ff0000" stroke-width="2" d="M.0,.0L.0,-95.0" fill="none"/><path stroke-linecap="round" stroke="#ff0000" stroke-width="1" d="M.0,-101.3L-4.2,-93.9C-3.0,-94.6,-1.5,-95.0,.0,-95.0C1.5,-95.0,3.0,-94.6,4.2,-93.9L.0,-101.3" fill="#ff0000"/></g><g transform="translate(170.00,347.00)" id="shape43"><path stroke="#226e6d" stroke-width="2" d="M.0,.0L.0,42.0L38.3,42.0" fill="none"/><path stroke-linecap="round" stroke="#226e6d" stroke-width="1" d="M44.5,42.0L37.2,37.8C37.9,39.0,38.3,40.5,38.3,42.0C38.3,43.5,37.9,45.0,37.2,46.2L44.5,42.0" fill="#226e6d"/></g><g transform="translate(212.00,152.00)" id="shape44"><path stroke="#226e6d" stroke-dasharray="2.5,2.5" stroke-width="2" d="M.0,.0L.0,9.8" fill="none"/><path stroke-linecap="round" stroke="#226e6d" stroke-width="1" d="M.0,16.0L4.2,8.7C3.0,9.4,1.5,9.8,.0,9.8C-1.5,9.8,-3.0,9.4,-4.2,8.7L.0,16.0" fill="#226e6d"/></g><g transform="translate(325.00,272.00)" id="shape45"><path fill-rule="nonzero" stroke="#226e6d" stroke-dasharray="11,5,2.5,5" stroke-width="2" d="M100.0,53.0L100.0,7.0C100.0,3.1,96.9,.0,93.0,.0L7.0,.0C3.1,.0,.0,3.1,.0,7.0L.0,53.0C.0,56.9,3.1,60.0,7.0,60.0L93.0,60.0C96.9,60.0,100.0,56.9,100.0,53.0z" fill="#ffc000"/><text xml:space="preserve" style="fill:#454545;font-family:Microsoft YaHei;font-size:12.00pt"><tspan x="34.0" y="26.0">维护</tspan><tspan x="15.5" y="47.0">厂家DMS</tspan></text></g><g transform="translate(572.00,272.00)" id="shape46"><path fill-rule="nonzero" stroke="#226e6d" stroke-dasharray="11,5,2.5,5" stroke-width="2" d="M100.0,53.0L100.0,7.0C100.0,3.1,96.9,.0,93.0,.0L7.0,.0C3.1,.0,.0,3.1,.0,7.0L.0,53.0C.0,56.9,3.1,60.0,7.0,60.0L93.0,60.0C96.9,60.0,100.0,56.9,100.0,53.0z" fill="#ffc000"/><text xml:space="preserve" style="fill:#454545;font-family:Microsoft YaHei;font-size:12.00pt"><tspan x="34.0" y="26.0">厂家</tspan><tspan x="14.5" y="47.0">生产/发车</tspan></text></g><path transform="translate(1104.70,204.00)" stroke="#ffc000" stroke-dasharray="11,5,2.5,5,2.5,5" stroke-width="2" d="M.0,.0L.0,98.0L-432.7,98.0" id="shape47" fill="none"/><g transform="translate(425.00,302.00)" id="shape48"><path stroke="#ffc000" stroke-dasharray="11,5,2.5,5,2.5,5" stroke-width="2" d="M.0,.0L140.8,.0" fill="none"/><path stroke-linecap="round" stroke="#ffc000" stroke-width="1" d="M147.0,.0L139.7,-4.2C140.4,-3.0,140.8,-1.5,140.8,.0C140.8,1.5,140.4,3.0,139.7,4.2L147.0,.0" fill="#ffc000"/></g><g transform="translate(622.00,332.00)" id="shape49"><path stroke="#ffc000" stroke-dasharray="11,5,2.5,5,2.5,5" stroke-width="2" d="M.0,.0L.0,39.0L-69.3,39.0" fill="none"/><path stroke-linecap="round" stroke="#ffc000" stroke-width="1" d="M-75.5,39.0L-68.2,43.2C-68.9,42.0,-69.3,40.5,-69.3,39.0C-69.3,37.5,-68.9,36.0,-68.2,34.8L-75.5,39.0" fill="#ffc000"/><rect width="128.0" x="-63.0" y="12.5" height="21.0" fill="#ffffff"/><text xml:space="preserve" style="fill:#454545;font-family:Microsoft YaHei;font-size:12.00pt"><tspan x="-63.0" y="29.5">更新订单在途状态</tspan></text></g><g transform="translate(990.00,695.00)" id="shape50"><path stroke="#226e6d" stroke-width="2" d="M.0,.0L35.8,.0" fill="none"/><path stroke-linecap="round" stroke="#226e6d" stroke-width="1" d="M42.0,.0L34.7,-4.2C35.4,-3.0,35.8,-1.5,35.8,.0C35.8,1.5,35.4,3.0,34.7,4.2L42.0,.0" fill="#226e6d"/></g><g transform="translate(1304.00,144.00)" id="shape51"><path fill-rule="nonzero" stroke="#854e27" stroke-width="2" d="M136.0,60.0L136.0,.0L.0,.0L.0,60.0L136.0,60.0z" fill="#fbf2ef"/><text xml:space="preserve" style="fill:#454545;font-family:Microsoft YaHei;font-size:12.00pt"><tspan x="36.0" y="26.0">生成凭证</tspan><tspan x="36.0" y="47.0">财务记账</tspan></text></g><g transform="translate(1212.00,174.00)" id="shape52"><path stroke="#226e6d" stroke-width="2" d="M.0,.0L85.8,.0" fill="none"/><path stroke-linecap="round" stroke="#226e6d" stroke-width="1" d="M92.0,.0L84.7,-4.2C85.4,-3.0,85.8,-1.5,85.8,.0C85.8,1.5,85.4,3.0,84.7,4.2L92.0,.0" fill="#226e6d"/></g><g transform="translate(1038.00,512.00)" id="shape53"><path fill-rule="nonzero" stroke="#854e27" stroke-width="2" d="M136.0,60.0L136.0,.0L.0,.0L.0,60.0L136.0,60.0z" fill="#fbf2ef"/><text xml:space="preserve" style="fill:#454545;font-family:Microsoft YaHei;font-size:12.00pt"><tspan x="36.0" y="26.0">生成凭证</tspan><tspan x="36.0" y="47.0">财务记账</tspan></text></g><g transform="translate(1304.00,826.00)" id="shape54"><path fill-rule="nonzero" stroke="#854e27" stroke-width="2" d="M136.0,60.0L136.0,.0L.0,.0L.0,60.0L136.0,60.0z" fill="#fbf2ef"/><text xml:space="preserve" style="fill:#454545;font-family:Microsoft YaHei;font-size:12.00pt"><tspan x="36.0" y="26.0">生成凭证</tspan><tspan x="36.0" y="47.0">财务记账</tspan></text></g><g transform="translate(1032.00,742.33)" id="shape55"><path fill-rule="nonzero" d="M7.5,.0L92.5,.0L92.5,.0C96.6,.0,100.0,13.4,100.0,30.0C100.0,46.6,96.6,60.0,92.5,60.0L7.5,60.0L7.5,60.0C3.4,60.0,.0,46.6,.0,30.0C.0,13.4,3.4,.0,7.5,.0z" fill="#eef7f7"/><path stroke="#226e6d" stroke-width="2" d="M7.5,.0L92.5,.0L92.5,.0C96.6,.0,100.0,13.4,100.0,30.0C100.0,46.6,96.6,60.0,92.5,60.0L7.5,60.0L7.5,60.0C3.4,60.0,.0,46.6,.0,30.0C.0,13.4,3.4,.0,7.5,.0zM92.5,.0C88.4,.0,85.0,13.4,85.0,30.0C85.0,46.6,88.4,60.0,92.5,60.0" fill="none"/><text xml:space="preserve" style="fill:#454545;font-family:Microsoft YaHei;font-size:12.00pt"><tspan x="14.3" y="26.0">采购付款</tspan><tspan x="14.3" y="47.0">结算记录</tspan></text></g><g transform="translate(1173.00,734.33)" id="shape56"><path fill-rule="nonzero" stroke="#226e6d" stroke-width="2" d="M184.0,53.0L184.0,7.0C184.0,3.1,180.9,.0,177.0,.0L7.0,.0C3.1,.0,.0,3.1,.0,7.0L.0,53.0C.0,56.9,3.1,60.0,7.0,60.0L177.0,60.0C180.9,60.0,184.0,56.9,184.0,53.0z" fill="#eef7f7"/><text xml:space="preserve" style="fill:#454545;font-family:Microsoft YaHei;font-size:12.00pt"><tspan x="20.0" y="26.0">系统自动或人工手动</tspan><tspan x="44.0" y="47.0">采购付款结算</tspan></text></g><g transform="translate(1144.00,204.00)" id="shape57"><path stroke="#ff0000" stroke-width="2" d="M.0,.0L.0,276.0L121.0,276.0L121.0,524.1" fill="none"/><path stroke-linecap="round" stroke="#ff0000" stroke-width="1" d="M121.0,530.3L125.2,523.0C124.0,523.7,122.5,524.1,121.0,524.1C119.5,524.1,118.0,523.7,116.8,523.0L121.0,530.3" fill="#ff0000"/></g><g transform="translate(966.00,840.77)" id="shape58"><path stroke="#ff0000" stroke-width="2" d="M.0,.0L244.9,.0L244.9,-40.2" fill="none"/><path stroke-linecap="round" stroke="#ff0000" stroke-width="1" d="M244.9,-46.4L240.7,-39.1C241.9,-39.8,243.4,-40.2,244.9,-40.2C246.5,-40.2,247.9,-39.8,249.2,-39.1L244.9,-46.4" fill="#ff0000"/></g><g transform="translate(966.00,856.25)" id="shape59"><path stroke="#226e6d" stroke-width="2" d="M.0,.0L306.0,.0L306.0,-0.3L331.8,-0.3" fill="none"/><path stroke-linecap="round" stroke="#226e6d" stroke-width="1" d="M338.0,-0.3L330.7,-4.5C331.4,-3.2,331.8,-1.8,331.8,-0.3C331.8,1.3,331.4,2.7,330.7,4.0L338.0,-0.3" fill="#226e6d"/></g><g transform="translate(1173.00,781.08)" id="shape60"><path stroke="#226e6d" stroke-width="2" d="M.0,.0L-35.1,-0.0" fill="none"/><path stroke-linecap="round" stroke="#226e6d" stroke-width="1" d="M-41.3,-0.0L-34.0,4.2C-34.7,3.0,-35.1,1.5,-35.1,-0.0C-35.1,-1.5,-34.7,-3.0,-34.0,-4.2L-41.3,-0.0" fill="#226e6d"/></g><g transform="translate(1322.00,375.00)" id="shape61"><path fill-rule="nonzero" stroke="#305c74" stroke-width="2" d="M22.0,44.0L78.0,44.0L78.0,44.0C90.2,44.0,100.0,34.2,100.0,22.0C100.0,9.8,90.2,.0,78.0,.0L22.0,.0L22.0,.0C9.8,.0,.0,9.8,.0,22.0C.0,34.2,9.8,44.0,22.0,44.0z" fill="#eff4f8"/><text xml:space="preserve" style="fill:#454545;font-family:Microsoft YaHei;font-size:12.00pt"><tspan x="34.0" y="28.5">结束</tspan></text></g><g transform="translate(1372.00,826.00)" id="shape62"><path stroke="#7030a0" stroke-width="2" d="M.0,.0L.0,-400.8" fill="none"/><path stroke-linecap="round" stroke="#7030a0" stroke-width="1" d="M.0,-407.0L-4.2,-399.7C-3.0,-400.4,-1.5,-400.8,.0,-400.8C1.5,-400.8,3.0,-400.4,4.2,-399.7L.0,-407.0" fill="#7030a0"/></g><g transform="translate(1372.00,257.50)" id="shape63"><path stroke="#7030a0" stroke-width="2" d="M.0,.0L.0,111.3" fill="none"/><path stroke-linecap="round" stroke="#7030a0" stroke-width="1" d="M.0,117.5L4.2,110.2C3.0,110.9,1.5,111.3,.0,111.3C-1.5,111.3,-3.0,110.9,-4.2,110.2L.0,117.5" fill="#7030a0"/></g><g transform="translate(966.00,542.00)" id="shape64"><path stroke="#226e6d" stroke-width="2" d="M.0,.0L65.8,.0" fill="none"/><path stroke-linecap="round" stroke="#226e6d" stroke-width="1" d="M72.0,.0L64.7,-4.2C65.4,-3.0,65.8,-1.5,65.8,.0C65.8,1.5,65.4,3.0,64.7,4.2L72.0,.0" fill="#226e6d"/></g><g transform="translate(1174.00,542.00)" id="shape65"><path stroke="#7030a0" stroke-width="2" d="M.0,.0L198.0,.0L198.0,-116.8" fill="none"/><path stroke-linecap="round" stroke="#7030a0" stroke-width="1" d="M198.0,-123.0L193.8,-115.7C195.0,-116.4,196.5,-116.8,198.0,-116.8C199.5,-116.8,201.0,-116.4,202.2,-115.7L198.0,-123.0" fill="#7030a0"/></g><g transform="translate(410.50,205.00)" id="shape66"><path fill-rule="nonzero" stroke="#226e6d" stroke-width="2" d="M.0,52.5L.0,.0L136.0,.0L136.0,52.5L136.0,52.5C125.7,47.7,114.2,45.0,102.0,45.0C89.8,45.0,78.3,47.7,68.0,52.5L68.0,52.5C57.7,57.3,46.2,60.0,34.0,60.0C21.8,60.0,10.3,57.3,.0,52.5z" fill="#eef7f7"/><text xml:space="preserve" style="fill:#454545;font-family:Microsoft YaHei;font-size:12.00pt"><tspan x="28.0" y="29.0">付款申请单</tspan></text></g><g transform="translate(830.00,205.00)" id="shape67"><path fill-rule="nonzero" stroke="#226e6d" stroke-width="2" d="M.0,52.5L.0,.0L136.0,.0L136.0,52.5L136.0,52.5C125.7,47.7,114.2,45.0,102.0,45.0C89.8,45.0,78.3,47.7,68.0,52.5L68.0,52.5C57.7,57.3,46.2,60.0,34.0,60.0C21.8,60.0,10.3,57.3,.0,52.5z" fill="#eef7f7"/><text xml:space="preserve" style="fill:#454545;font-family:Microsoft YaHei;font-size:12.00pt"><tspan x="44.0" y="29.0">付款单</tspan></text></g><g transform="translate(607.00,572.13)" id="shape68"><path fill-rule="nonzero" stroke="#226e6d" stroke-width="2" d="M.0,52.5L.0,.0L136.0,.0L136.0,52.5L136.0,52.5C125.7,47.7,114.2,45.0,102.0,45.0C89.8,45.0,78.3,47.7,68.0,52.5L68.0,52.5C57.7,57.3,46.2,60.0,34.0,60.0C21.8,60.0,10.3,57.3,.0,52.5z" fill="#eef7f7"/><text xml:space="preserve" style="fill:#454545;font-family:Microsoft YaHei;font-size:12.00pt"><tspan x="12.0" y="29.0">整车采购入库单</tspan></text></g><g transform="translate(607.00,886.25)" id="shape69"><path fill-rule="nonzero" stroke="#226e6d" stroke-width="2" d="M.0,52.5L.0,.0L136.0,.0L136.0,52.5L136.0,52.5C125.7,47.7,114.2,45.0,102.0,45.0C89.8,45.0,78.3,47.7,68.0,52.5L68.0,52.5C57.7,57.3,46.2,60.0,34.0,60.0C21.8,60.0,10.3,57.3,.0,52.5z" fill="#eef7f7"/><text xml:space="preserve" style="fill:#454545;font-family:Microsoft YaHei;font-size:12.00pt"><tspan x="44.0" y="29.0">应付单</tspan></text></g><g transform="translate(1304.00,886.00)" id="shape70"><path fill-rule="nonzero" stroke="#226e6d" stroke-width="2" d="M.0,52.5L.0,.0L136.0,.0L136.0,52.5L136.0,52.5C125.7,47.7,114.2,45.0,102.0,45.0C89.8,45.0,78.3,47.7,68.0,52.5L68.0,52.5C57.7,57.3,46.2,60.0,34.0,60.0C21.8,60.0,10.3,57.3,.0,52.5z" fill="#eef7f7"/><text xml:space="preserve" style="fill:#454545;font-family:Microsoft YaHei;font-size:12.00pt"><tspan x="52.0" y="29.0">凭证</tspan></text></g><g transform="translate(1304.00,205.00)" id="shape71"><path fill-rule="nonzero" stroke="#226e6d" stroke-width="2" d="M.0,52.5L.0,.0L136.0,.0L136.0,52.5L136.0,52.5C125.7,47.7,114.2,45.0,102.0,45.0C89.8,45.0,78.3,47.7,68.0,52.5L68.0,52.5C57.7,57.3,46.2,60.0,34.0,60.0C21.8,60.0,10.3,57.3,.0,52.5z" fill="#eef7f7"/><text xml:space="preserve" style="fill:#454545;font-family:Microsoft YaHei;font-size:12.00pt"><tspan x="52.0" y="29.0">凭证</tspan></text></g><g transform="translate(1038.00,572.13)" id="shape72"><path fill-rule="nonzero" stroke="#226e6d" stroke-width="2" d="M.0,52.5L.0,.0L136.0,.0L136.0,52.5L136.0,52.5C125.7,47.7,114.2,45.0,102.0,45.0C89.8,45.0,78.3,47.7,68.0,52.5L68.0,52.5C57.7,57.3,46.2,60.0,34.0,60.0C21.8,60.0,10.3,57.3,.0,52.5z" fill="#eef7f7"/><text xml:space="preserve" style="fill:#454545;font-family:Microsoft YaHei;font-size:12.00pt"><tspan x="52.0" y="29.0">凭证</tspan></text></g></svg></div>
+      </div>
+      <div id="navBar">
+        <div id="nav-thumbs"/>
+      </div>
+    </div>
+    <script>
+        const svgs=document.getElementById("svg-container").children;
+        const UA=window.navigator.userAgent;
+        const ua=(UA.indexOf('rv:11')+UA.indexOf('Firefox'))>=0;
+        const svgcount=document.getElementById('svg-container').childElementCount;
+        var styleArr=[];
+        var heightArr=[];
+        var navBar=document.getElementById('navBar');
+        var conInfo=document.getElementById('content-info');
+        for(var i=0;i<svgcount;i++){
+            styleArr[i] = {width:svgs[i].getAttribute('width'),height:svgs[i].getAttribute('height')}
+        }
+        window.onresize=function () {
+            renavstyle();
+            resvgstyle();
+        };
+        window.onscroll=renavstyle;
+        window.onload=function () {
+            renavstyle();
+            var sideWidth=navBar.offsetWidth;
+            document.getElementById('content-info').style.marginRight=sideWidth+'px';
+            document.getElementById('main-content').style.marginRight=sideWidth+'px';
+            resvgstyle();
+            doscroll();
+        };
+        function recontainstyle() {
+            var topHeight=conInfo.clientHeight;
+            var svgHeight=0;
+            for(var i=0;i<svgcount;i++){
+                heightArr[i]=svgs[i].getBoundingClientRect().height+10;
+                svgHeight+=svgs[i].clientHeight ||svgs[i].getBoundingClientRect().height;
+            }
+            var fullHeight=svgHeight+Number(topHeight);
+            if(fullHeight<window.innerHeight){
+            document.getElementById('main-content').style.position='absolute';
+            document.getElementById('main-content').style.top=topHeight+'px';
+        }else{
+            document.getElementById('main-content').style.position='';
+        }
+        }
+        function resvgstyle() {
+            var sideWidth=navBar.offsetWidth+20;
+            for(var i=0;i<svgcount;i++){
+                var oriWidth = styleArr[i].width;
+                var oriHeight = styleArr[i].height;
+                var percent = oriHeight / oriWidth;
+                var innerWidth=document.body.offsetWidth-sideWidth;
+                if (innerWidth <= oriWidth) {
+                    svgs[i].removeAttribute('width');
+                    svgs[i].removeAttribute('height');
+                    if (ua) {
+                        svgs[i].setAttribute('height',innerWidth*percent);
+                    }
+                }else {
+                    svgs[i].setAttribute('width', oriWidth);
+                    svgs[i].setAttribute('height', oriHeight);
+                }
+            }
+            recontainstyle();
+        }
+        function renavstyle() {
+            var topHeight=conInfo.clientHeight;
+            var scrollTop=document.body.scrollTop||document.documentElement.scrollTop;
+            if(scrollTop>topHeight){
+                document.getElementById('navBar').style.top=0+'px';
+            }else{
+                document.getElementById('navBar').style.top=topHeight-scrollTop+'px';
+            }
+            doscroll();
+        }
+        function doscroll() {
+            var topHeight=conInfo.clientHeight;
+            var scrollTop=document.body.scrollTop||document.documentElement.scrollTop;
+            for(var i=0;i<svgcount;i++){
+                var sum=0;
+                for(var j=0;j<=i;j++){
+                    sum+=heightArr[j];
+                }
+                if(scrollTop+window.innerHeight/2-topHeight-sum<0){
+                    var sub=Number(i)+1;
+                    if(document.querySelector('#nav-thumbs .selected')){
+                        document.querySelector('#nav-thumbs .selected').classList.remove('selected');
+                    }
+                    document.querySelector('.nav-thumb:nth-of-type('+sub+')').classList.add('selected');
+                    break;
+                }
+            }
+        }
+        var navs=document.querySelectorAll('.nav-thumb');
+        for(i=0;i<navs.length;i++){
+            navs[i].children[0].onclick=function () {
+                document.querySelector('#nav-thumbs .selected').classList.remove('selected');
+                this.parentNode.classList.add('selected');
+            }
+        }
+</script>
+  </body>
+</html>
