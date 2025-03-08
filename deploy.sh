@@ -16,17 +16,17 @@ cd docs/.vuepress/dist
 # 如果手运行该脚本，则执行 if 里的，如果是 GitHub 自动执行该脚本，则是 else 里的
 if [ -z "$GITHUB_TOKEN" ]; then
   msg='deploy'
-  githubUrl=git@github.com:myeas/myeas.github.io.git
+  githubUrl=git@365soft.github.com:365soft/365soft.github.io.git
 else
   msg='来自 Github actions 的自动部署'
-  githubUrl=https://myeas:${GITHUB_TOKEN}@myeas/myeas/myeas.github.io.git
-  git config --global user.name "myeas"
-  git config --global user.email "job_yuhui@qq.com"
+  githubUrl=https://365soft:${GITHUB_TOKEN}@365soft/365soft/365soft.github.io.git
+  git config --global user.name "365soft"
+  git config --global user.email "flyyhui@qq.com"
 fi
 git init
-# git remote add origin https://github.com/myeas/myeas.github.io
-# git config user.name "myeas"
-# git config user.email "job_yuhui@qq.com"
+# git remote add origin https://github.com/365soft/365soft.github.io
+# git config user.name "365soft"
+# git config user.email "flyyhui@qq.com"
 # git checkout -b master
 git add -A
 git commit -m "${msg}"
