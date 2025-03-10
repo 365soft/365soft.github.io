@@ -1,6 +1,6 @@
 欢迎来到我的主页，请放下浮躁，细细品尝她，希望不会让你失望。
 
-1️⃣ 主地址：<https://ctcai.eashelp.cn/>
+1️⃣ 主地址：<https://365soft.softhub.cc/>
 
 ## 目录页的front matter
 
