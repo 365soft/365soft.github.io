@@ -1,7 +1,7 @@
 ---
 home: true
 # heroImage: # ./img/logo.jpg
-heroText: 零售系统应用帮助中心 #金蝶EAS系统帮助中心
+heroText: 365soft软件小站 #365soft
 tagline: 🚀持续完善 点滴进步
 # actionText: 开始使用 →
 # actionLink: ./list/
